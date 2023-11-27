@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int gcd(int n, int m){
+  while(n!=m){
+  if(n>m){
+    n=n-m;
+  }
+  else{
+   n=m-n ;
+  }
+  return n ;
+  }
+}
+
+int main(){
+  int n = 50;
+  int m = 75;
+  printf("GCD: %d", gcd(n, m));
+  return 0;
+}
