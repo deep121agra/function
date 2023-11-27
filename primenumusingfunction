@@ -1,0 +1,30 @@
+#include <stdio.h>
+ void prime( int n){
+   int i;
+    int count=0;
+   if (n==1){
+     printf(" it is neither a prime nor a not prime");
+   }
+   else{
+    for(i=1;i<=n-1;i++){ 
+         if (n%2==0){
+           printf("Nor prime");
+           break;
+         } 
+    }
+    if(count==0){
+      printf("prime");
+    } 
+   }
+   
+     if(i%2==0){
+       printf("%d\n",i);
+     }
+   }
+ 
+void main(){
+  int n ;
+  n=50;
+  prime(n);
+
+}   
