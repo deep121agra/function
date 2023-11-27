@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int gcd(int n, int m){
+  int c;
+  if(n > m){
+    c = n;
+  } else{
+    c = m;
+  }
+  while(1){
+    if(c % n == 0 && c % m == 0){
+      return c;
+    }
+    c++;
+  }
+}
+
+int main(){
+  int n = 50;
+  int m = 75;
+  printf("GCD: %d", gcd(n, m));
+  return 0;
+}
